@@ -1,6 +1,6 @@
 name = 'zlib'
 
-version = '1.2.11+ta.1.0.0'
+version = '1.2.11+ta.1.0.1'
 
 authors = [
     'benjamin.skinner',
@@ -22,3 +22,5 @@ def commands():
     env.ZLIB_ROOT.set( "{root}" )
     env.ZLIB_LIB_DIR.set( "{root}/lib" )
     env.ZLIB_INCLUDE_DIR.set( "{root}/include" )
+
+    env.PATH.append( "{root}/bin" )
