@@ -1,6 +1,6 @@
 name = 'zlib'
 
-version = '1.2.11-ta.1.1.0'
+version = '1.2.11-ta.1.1.1'
 
 authors = [
     'benjamin.skinner',
@@ -23,7 +23,7 @@ build_system = "cmake"
 def commands():
 
     # Split and store version and package version
-    split_versions = str(version).split('+')
+    split_versions = str(version).split('-')
     env.ZLIB_VERSION.set(split_versions[0])
     env.ZLIB_PACKAGE_VERSION.set(split_versions[1])
 
